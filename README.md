@@ -116,7 +116,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Yahoo Finance for financial data
 - PyTorch for the LSTM model
 
-## 🚧 Project Status
+## Project Status
+
 QuantBrain is under active development. Expect breaking changes and unfinished components. Contributions are welcome, but features may evolve rapidly.
 
 ## Support
