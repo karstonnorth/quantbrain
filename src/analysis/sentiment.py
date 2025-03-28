@@ -6,8 +6,9 @@ class SentimentAnalyzer:
     def __init__(self):
         self.model = pipeline(
             "sentiment-analysis",
-            model="microsoft/phi-2",  # Using a smaller, more stable model
-            device=-1  # Use CPU by default
+            model="microsoft/phi-2@v1.0.0",  # Using a smaller, more stable model
+            device=-1,
+            trust_remote_code=False  # Explicitly refuse remote execution
         )
         
     def analyze_text(self, text: str) -> Dict:
